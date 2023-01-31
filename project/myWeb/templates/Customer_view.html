@@ -1,0 +1,26 @@
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+
+
+
+<html>
+<title>my View</title>
+<body>
+
+<h1 style="color:rgb(126, 66, 6);"> Dear customer! PLEASE ENTER YOUR INFORMATION  </h1>
+<p style="background-color:rgb(162, 110, 57);">here below you can add.</p>
+
+<center>
+    <form method="POST">
+    {% csrf_token %} {{Customers_form|crispy}} <br>
+    <button type="submit">ADD</button>
+    <a href= 'Phone view'> GO</a>
+
+</form>
+</center>
+
+</body>
+</html>
+
+   
